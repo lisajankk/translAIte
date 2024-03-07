@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+        <title>translAIte</title>
+    </head>
+    <body class="loggedinBody">
+        <header>
+            <div class="leftMenu">
+                <a href="main-with-login.html" class="translAIte">
+                    translAIte
+                </a>
+            </div>
+            <div class="rightMenu">
+                <a class="account" href="account.html">
+                    My account
+                </a>
+                <a class="logout" href="landing.html">
+                    Log Out
+                </a>
+            </div>
+        </header>
+        <div class="bodyText">
+            <div class="bodyRegisterText1">My Account</div>
+
+            <!--<label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" placeholder="Enter your surname">-->
+            <section class="accountSection">
+                <div class="imageContainer">
+                    <img src="public/account.png" class="accountImage"/>
+                    <div class="accountDivButton">
+                        <button class="bodyButton" onclick="window.location.href='account-edit.html'">
+                            edit
+                        </button>
+                    </div>
+                </div>
+                <div class="labelsContainer">
+                    <label for="username">Username:</label>
+                    <input type="text" class="accountInput" id="username" name="username" placeholder="Enter your username" value="User1" readonly>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" class="accountInput" id="email" name="email" placeholder="Enter your email" value="user1@gmail.com" readonly>
+            
+                    <label for="password">Password:</label>
+                    <input type="password" class="accountInput" id="password" name="password" placeholder="Enter your password" value="12345678" readonly>
+                </div>
+            </section>
+            
+            <div class="accountButtons">
+                <button class="textHistoryButton">
+                    Text history
+                </button>
+                <button class="savedTranslationsButton">
+                    Saved translations
+                </button>
+            </div>
+            <div class="textHistoryLabel">
+                translated text history here...
+            </div>
+
+        </div>
+        <footer>
+            <a class="contactFooter">
+                Contact us:
+            </a>
+            <a href="mailto:support@translaite.ai">support@translaite.ai</a>
+            <a href="tel:+1234567890">+1234567890</a>
+        </footer>
+    </body>
+</html>
