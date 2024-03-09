@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="index.css">
-        <script src="index.js"></script>
+        <script src="main.js"></script>
         <title>translAIte</title>
     </head>
     <body>
@@ -39,20 +39,34 @@
                             <button class="uploadSection">
                                 <img src="public/web.png" class="image"/>
                             </button>
-                            <button class="languageSection">
-                                choose language
-                                <img src="public/translater.png" class="image languageImage" alt="image" title="hello"/>
-                            </button>
+                            <div class="dropdown">
+                                <button id="from_lang" class="languageSection translateToLanguage">
+                                    <span id="from_lang_text">choose language</span>
+                                    <img src="public/translater.png" class="image languageImage" alt="image" title="hello"/>
+                                </button>
+                                <div class="dropdown-content" id="myDropdown">
+                                    <button id="from_spanish" class="lang">Spanish</button>
+                                    <button id="from_english" class="lang">English</button>
+                                    <button id="from_swedish" class="lang">Swedish</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <textarea id="myTextArea" name="myTextArea" rows="4" cols="50" placeholder="enter text here..."></textarea>
+                    <textarea id="textToTranslateArea" name="myTextArea" rows="4" cols="50" placeholder="enter text here..."></textarea>
                 </div>
                 <div class="textAreaContainer textToTranslate">
                     <div>
-                        <button class="languageSection translateToLanguage">
-                            choose language
-                            <img src="public/translater.png" class="image languageImage" alt="image" title="hello"/>
-                        </button>
+                        <div class="dropdown">
+                            <button id="to_lang" class="languageSection translateToLanguage">
+                                <span id="to_lang_text">choose language</span>
+                                <img src="public/translater.png" class="image languageImage" alt="image" title="hello"/>
+                            </button>
+                            <div class="dropdown-content" id="myDropdown">
+                                <button id="to_spanish" class="lang">Spanish</button>
+                                <button id="to_english" class="lang">English</button>
+                                <button id="to_swedish" class="lang">Swedish</button>
+                            </div>
+                        </div>
                         <div class="saveSection">
                             <button class="uploadSection">
                                 <img src="public/copy.png" class="image"/>
@@ -68,14 +82,14 @@
                             </button>
                         </div>
                     </div>
-                    <textarea id="myTextArea" name="myTextArea" rows="4" cols="50" placeholder="translated text will appear here..." readonly></textarea>
+                    <textarea id="translatedTextArea" name="myTextArea" rows="4" cols="50" placeholder="translated text will appear here..." readonly></textarea>
                 </div>
             </div>
             <div class="specifyTextrea">
-                <textarea id="myTextArea" name="myTextArea" rows="4" cols="50" placeholder="specify to AI how to translate the text..."></textarea>
+                <textarea id="howto" name="myTextArea" rows="4" cols="50" placeholder="specify to AI how to translate the text..."></textarea>
             </div>
             <div class="bodyDivButton">
-                <button class="bodyButton">
+                <button id="translate" class="bodyButton">
                     translate
                 </button>
             </div>
