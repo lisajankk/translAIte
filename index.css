@@ -79,7 +79,7 @@ footer{
 
 .bodyDivButton{
     padding-top: 3rem;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
 }
 
 .accountDivButton{
@@ -454,4 +454,8 @@ textarea {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+#bookmark-container {
+    padding-bottom: 100px;
 }
