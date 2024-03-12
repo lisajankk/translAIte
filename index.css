@@ -208,7 +208,6 @@ a{
 
 label {
     display: block;
-    margin-bottom: 5px;
     font-weight: bold;
     color: #333;
     text-shadow: 1px 1px 6px rgba(221, 221, 221, 0.5);
@@ -302,18 +301,13 @@ textarea {
     font-weight: bolder;
     padding-top: 12rem;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
 }
 
 .textAreaContainer {
     display: block;
     margin-bottom: 1rem;
-}
-
-.textAreaContainer label {
-    display: block;
-    margin-bottom: 0.5rem;
+    height: 100%;
 }
 
 .textAreaContainer textarea {
@@ -361,6 +355,7 @@ textarea {
 .uploadSection,
 .voiceSection {
     background: linear-gradient(45deg, #ffffffeb, #e4e4e4a8, #006aff97);
+    margin-right: 2rem;
 }
 
 .languageImage{
@@ -410,12 +405,6 @@ textarea {
     float: left;
     margin-right: 1rem;
     margin-bottom: 1rem;
-}
-
-.saveSection{
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    float: right;
 }
 
 .accountInput{
@@ -471,4 +460,50 @@ textarea {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+}
+
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.get-token {
+    background: linear-gradient(45deg, #00ffd0a1, #004cff8e, #bb00ff97, #c700389f);
+    background-size: 400% 400%;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: 100;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-size: 400% 400%;
+    color: white;
+    text-align: center;
+    transition: all 0.4s ease; 
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 1rem;
+}
+
+.get-token:hover {
+    background-position: right center; 
+    color: black; 
+}
+
+.token {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 50%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+input[type="file"] {
+    display: none;
 }
