@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="index.css">
-        <script src="main.js"></script>
+        <script src="index.js"></script>
         <title>translAIte</title>
     </head>
     <body>
@@ -48,6 +48,8 @@
                                     <button id="from_spanish" class="lang">Spanish</button>
                                     <button id="from_english" class="lang">English</button>
                                     <button id="from_swedish" class="lang">Swedish</button>
+                                    <button id="from_detect" class="lang">Detect</button>
+                                    <input id="from_other" type="text" class="other-lang" placeholder="Other">
                                 </div>
                             </div>
                         </div>
@@ -65,6 +67,7 @@
                                 <button id="to_spanish" class="lang">Spanish</button>
                                 <button id="to_english" class="lang">English</button>
                                 <button id="to_swedish" class="lang">Swedish</button>
+                                <input id="to_other" type="text" class="other-lang" placeholder="Other">
                             </div>
                         </div>
                         <div class="saveSection">
@@ -77,7 +80,7 @@
                             <button id="downloadTranslate" class="uploadSection">
                                 <img src="public/download.png" class="image"/>
                             </button>
-                            <button class="uploadSection">
+                            <button class="uploadSection" id="text-to-speech">
                                 <img src="public/volume.png" class="image"/>
                             </button>
                         </div>
